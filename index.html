@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Equipos de Cómputo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Equipos de Cómputo</h1>
+        <nav>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#carrito">Carrito</a>
+        </nav>
+    </header>
+    <main>
+        <section id="catalogo">
+            <h2>Catálogo de Productos</h2>
+            <div class="productos">
+                <!-- Ejemplo de producto -->
+                <div class="producto">
+                    <img src="pc1.jpg" alt="Laptop ABC">
+                    <h3>Laptop ABC</h3>
+                    <p>Intel i5, 8GB RAM, 512GB SSD</p>
+                    <span>$600</span>
+                    <button onclick="agregarAlCarrito('Laptop ABC')">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="pc2.jpg" alt="PC Gamer XYZ">
+                    <h3>PC Gamer XYZ</h3>
+                    <p>Ryzen 5, 16GB RAM, RTX 4060</p>
+                    <span>$1200</span>
+                    <button onclick="agregarAlCarrito('PC Gamer XYZ')">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+        <section id="carrito">
+            <h2>Tu carrito</h2>
+            <ul id="lista-carrito"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tienda Equipos de Cómputo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
