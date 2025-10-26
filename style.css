@@ -58,3 +58,27 @@ footer {
 .btn-wsp:hover {
     background: #128c7e;
 }
+.logo {
+    height: 60px;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header h1 {
+    margin: 10px 0 0 0;
+}
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  .logo {
+    margin-right: 30px;
+  }
+}
