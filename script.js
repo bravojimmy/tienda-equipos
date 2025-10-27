@@ -14,3 +14,16 @@ function mostrarCarrito() {
         lista.appendChild(item);
     });
 }
+.icono-facebook {
+    width: 34px;
+    height: 34px;
+    margin-left: 12px;
+    vertical-align: middle;
+    transition: filter .2s;
+}
+.icono-facebook:hover {
+    filter: brightness(0.7);
+}
+.red-social {
+    text-decoration: none;
+}
