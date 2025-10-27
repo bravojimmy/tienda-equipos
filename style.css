@@ -40,7 +40,7 @@ footer {
     padding: 30px;
     text-align: center;
     margin: 40px 10px;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 0 8px #c5c5c5;
 }
 .btn-wsp {
@@ -152,5 +152,6 @@ header h1 {
 .red-social {
     text-decoration: none;
 }
+
 
 
