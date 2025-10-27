@@ -108,3 +108,34 @@ header h1 {
     width: fit-content;
     box-shadow: 0 1px 4px #ccc;
 }
+.servicios-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+.servicio-tarjeta {
+    background: #f8fafd;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #c5c5c555;
+    text-align: center;
+    padding: 18px 16px;
+    width: 180px;
+    transition: transform .2s;
+}
+.servicio-tarjeta:hover {
+    transform: translateY(-7px) scale(1.04);
+}
+.servicio-tarjeta img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.servicio-tarjeta h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #222a5c;
+}
