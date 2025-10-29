@@ -19,6 +19,7 @@ const detallesProductos = {
     descripcion: 'Audifono Teros 8037N',
     precio: 'S/45',
     atributos: {
+        'Marca': 'TEROS',  
         'Color': 'Negro',
         'Interfaz': 'Por cable',
         'Conector': 'USB-A',
@@ -31,6 +32,7 @@ const detallesProductos = {
     descripcion: 'Combo Teros TE-4062N',
     precio: 'S/35',
     atributos: {
+        'Marca': 'TEROS',  
         'Color': 'Negro',
         'Interfaz': 'USB',
         '#Teclas': '105',
@@ -69,6 +71,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
