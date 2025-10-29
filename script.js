@@ -27,7 +27,7 @@ const detallesProductos = {
     }
   },
   'ComboTE-4062N': {
-    imagen: 'tecaldoTE-4062N.jpg',
+    imagen: 'tecladoTE-4062N.jpg',
     nombre: 'Combo Teclado + Mouse',
     descripcion: 'Combo Teros TE-4062N',
     precio: 'S/35',
@@ -71,6 +71,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
