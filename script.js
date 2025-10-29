@@ -17,7 +17,15 @@ const detallesProductos = {
     imagen: 'AUDIFONO_TE-8037N.jpg',
     nombre: 'Audifono',
     descripcion: 'Audifono Teros',
-    precio: 'S/45'
+    precio: 'S/45',
+    atributos: {
+        'Color': 'Negro y Rojo',
+        'Procesador': 'Ryzen 5',
+        'Memoria RAM': '16GB',
+        'Tarjeta gráfica': 'RTX 4060',
+        'Disco SSD': '1TB',
+        'Fuente': '650W'
+    }
   }
   // Agrega más productos aquí...
 };
@@ -25,16 +33,20 @@ const detallesProductos = {
 function mostrarDetalle(nombre) {
     const prod = detallesProductos[nombre];
     if (prod) {
-      let tabla = `<table class="tabla-atributos">`;
+        // Construye la tabla de atributos
+        let tabla = `<table class="tabla-atributos">`;
         for (const clave in prod.atributos) {
             tabla += `<tr><td>${clave}</td><td>${prod.atributos[clave]}</td></tr>`;
         }
-        tabla += `</table>`;  
-      document.getElementById('detalle-producto').innerHTML = `
+        tabla += `</table>`;
+        
+        document.getElementById('detalle-producto').innerHTML = `
             <img src="${prod.imagen}" alt="${prod.nombre}" style="width:100px; margin-bottom:12px;">
             <h3>${prod.nombre}</h3>
             <p>${prod.descripcion}</p>
             <span style="font-weight:bold; color:#032;">${prod.precio}</span>
+            <hr>
+            ${tabla}
         `;
         document.getElementById('modal-detalle').style.display = 'block';
     }
@@ -45,6 +57,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
