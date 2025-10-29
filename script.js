@@ -3,7 +3,7 @@ const detallesProductos = {
     imagen: 'AMDAthlon_3000G.jpg',
     nombre: 'AMD Athlon',
     descripcion: 'AMD Athlon 3000G',
-    precio: 'S/220'
+    precio: 'S/220',
     atributos: {
         'Color': 'Negro',
         'Procesador': 'Intel i5',
@@ -45,5 +45,6 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
