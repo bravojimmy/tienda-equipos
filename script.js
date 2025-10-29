@@ -48,8 +48,8 @@ const detallesProductos = {
     precio: 'S/100',
     atributos: {
         'Marca': 'Elite Group',  
-        'Modelo': 'Elite',,
-        'Capacidad': '8GB'
+        'Modelo': 'Elite',
+        'Capacidad': '8GB',
         'Tipo': 'DDR3',
         'Frecuencia': '1600Mhz',
         'Estandar': 'PC3-12800',
@@ -86,6 +86,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
