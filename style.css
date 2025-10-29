@@ -137,8 +137,8 @@ header h1 {
     color: #222a5c;
 }
 .icono-facebook {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     margin-left: 12px;
     vertical-align: middle;
     transition: filter .2s;
@@ -171,6 +171,7 @@ header h1 {
     position: absolute; right: 20px; top: 18px;
     font-size: 2em; color: #222; cursor: pointer;
 }
+
 
 
 
