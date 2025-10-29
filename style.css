@@ -181,6 +181,23 @@ header h1 {
     background: #eef4ff;
     border-radius: 12px;
 }
+.ver-mas {
+    display: block;
+    margin-top: 12px;
+    color: #333a9b;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: right;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+.producto:hover .ver-mas {
+    opacity: 1;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #283593;
+}
+
 
 
 
