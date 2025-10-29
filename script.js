@@ -24,6 +24,20 @@ const detallesProductos = {
         'Conector': 'USB-A',
         'Longitud cable': '2 Mt ± 0.15 Mt'
     }
+  },
+  'ComboTE-4062N': {
+    imagen: 'tecaldoTE-4062N.jpg',
+    nombre: 'Combo Teclado + Mouse',
+    descripcion: 'Combo Teros TE-4062N',
+    precio: 'S/35',
+    atributos: {
+        'Color': 'Negro',
+        'Interfaz': 'USB',
+        '#Teclas': '105',
+        'Dimensiones Teclado': '40 x 14 x 2.5 cm',
+        'Dimensiones Mouse': '19.5 x 6 x 3.5 cm',
+        'Longitud cable': '1.5 Mt'
+    }
   }
   // Agrega más productos aquí...
 };
@@ -55,6 +69,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
