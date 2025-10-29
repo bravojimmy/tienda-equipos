@@ -1,7 +1,7 @@
 const detallesProductos = {
   'AMDAthlon': {
     imagen: 'AMDAthlon_3000G.jpg',
-    nombre: 'AMD Athlon',
+    nombre: 'Procesador AMD',
     descripcion: 'AMD Athlon 3000G',
     precio: 'S/220',
     atributos: {
@@ -16,15 +16,13 @@ const detallesProductos = {
   'Audifono': {
     imagen: 'AUDIFONO_TE-8037N.jpg',
     nombre: 'Audifono',
-    descripcion: 'Audifono Teros',
+    descripcion: 'Audifono Teros 8037N',
     precio: 'S/45',
     atributos: {
-        'Color': 'Negro y Rojo',
-        'Procesador': 'Ryzen 5',
-        'Memoria RAM': '16GB',
-        'Tarjeta gráfica': 'RTX 4060',
-        'Disco SSD': '1TB',
-        'Fuente': '650W'
+        'Color': 'Negro',
+        'Interfaz': 'Por cable',
+        'Conector': 'USB-A',
+        'Longitud cable': '2 Mt ± 0.15 Mt'
     }
   }
   // Agrega más productos aquí...
@@ -57,6 +55,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
