@@ -1,15 +1,15 @@
 const detallesProductos = {
-  'Laptop ABC': {
-    imagen: 'pc1.jpg',
-    nombre: 'Laptop ABC',
-    descripcion: 'Intel i5, 8GB RAM, 512GB SSD',
-    precio: '$600'
+  'AMDAthlon': {
+    imagen: 'AMDAthlon_3000G.jpg',
+    nombre: 'AMD Athlon',
+    descripcion: 'AMD Athlon 3000G',
+    precio: 'S/220'
   },
-  'PC Gamer XYZ': {
-    imagen: 'pc2.jpg',
-    nombre: 'PC Gamer XYZ',
-    descripcion: 'Ryzen 5, 16GB RAM, RTX 4060',
-    precio: '$1200'
+  'Audifono': {
+    imagen: 'AUDIFONO_TE-8037N.jpg',
+    nombre: 'Audifono',
+    descripcion: 'Audifono Teros',
+    precio: 'S/45'
   }
   // Agrega más productos aquí...
 };
@@ -32,3 +32,4 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
