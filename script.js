@@ -5,12 +5,12 @@ const detallesProductos = {
     descripcion: 'AMD Athlon 3000G',
     precio: 'S/220',
     atributos: {
-        'Color': 'Negro',
-        'Procesador': 'Intel i5',
-        'Memoria RAM': '8GB',
-        'Disco SSD': '512GB',
-        'Pantalla': '15"',
-        'Batería': '6 horas'
+        'Socket': 'AM4 AMD',
+        'Nucleos': '2',
+        'Subprocesos': '4',
+        'Frecuencia Base': '3.5 Ghz',
+        'Procesador Grafico': 'AMD Radeon Vega 3',
+        'TDP': '35 watt'
     }
   },
   'Audifono': {
@@ -57,6 +57,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
