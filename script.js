@@ -40,6 +40,21 @@ const detallesProductos = {
         'Dimensiones Mouse': '19.5 x 6 x 3.5 cm',
         'Longitud cable': '1.5 Mt'
     }
+  },
+  'RAMElite8GB': {
+    imagen: 'RAMELITE8GB.jpg',
+    nombre: 'Memoria RAM',
+    descripcion: 'RAM Elite Group 8GB',
+    precio: 'S/100',
+    atributos: {
+        'Marca': 'Elite Group',  
+        'Modelo': 'Elite',,
+        'Capacidad': '8GB'
+        'Tipo': 'DDR3',
+        'Frecuencia': '1600Mhz',
+        'Estandar': 'PC3-12800',
+        'Voltaje': '1.35V'
+    }
   }
   // Agrega más productos aquí...
 };
@@ -71,6 +86,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
