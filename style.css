@@ -171,6 +171,17 @@ header h1 {
     position: absolute; right: 20px; top: 18px;
     font-size: 2em; color: #222; cursor: pointer;
 }
+.producto {
+    cursor: pointer; /* Cambia el cursor a mano */
+    transition: box-shadow .2s, transform .2s, background .2s;
+}
+.producto:hover {
+    box-shadow: 0 4px 20px #22222222;
+    transform: translateY(-6px) scale(1.03);
+    background: #eef4ff;
+    border-radius: 12px;
+}
+
 
 
 
