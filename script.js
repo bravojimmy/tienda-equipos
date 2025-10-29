@@ -4,6 +4,14 @@ const detallesProductos = {
     nombre: 'AMD Athlon',
     descripcion: 'AMD Athlon 3000G',
     precio: 'S/220'
+    atributos: {
+        'Color': 'Negro',
+        'Procesador': 'Intel i5',
+        'Memoria RAM': '8GB',
+        'Disco SSD': '512GB',
+        'Pantalla': '15"',
+        'Batería': '6 horas'
+    }
   },
   'Audifono': {
     imagen: 'AUDIFONO_TE-8037N.jpg',
@@ -17,7 +25,12 @@ const detallesProductos = {
 function mostrarDetalle(nombre) {
     const prod = detallesProductos[nombre];
     if (prod) {
-        document.getElementById('detalle-producto').innerHTML = `
+      let tabla = `<table class="tabla-atributos">`;
+        for (const clave in prod.atributos) {
+            tabla += `<tr><td>${clave}</td><td>${prod.atributos[clave]}</td></tr>`;
+        }
+        tabla += `</table>`;  
+      document.getElementById('detalle-producto').innerHTML = `
             <img src="${prod.imagen}" alt="${prod.nombre}" style="width:100px; margin-bottom:12px;">
             <h3>${prod.nombre}</h3>
             <p>${prod.descripcion}</p>
@@ -32,4 +45,5 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
