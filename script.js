@@ -56,7 +56,7 @@ const detallesProductos = {
         'Voltaje': '1.35V'
     }
   },
-  'Tintaepson': {
+  'epson664': {
     imagen: 'epson664Negro.jpg',
     nombre: 'Tinta Epson',
     descripcion: 'Epson 664',
@@ -100,6 +100,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
