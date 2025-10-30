@@ -80,10 +80,18 @@ const detallesProductos = {
 function mostrarDetalle(nombre) {
     const prod = detallesProductos[nombre];
     if (prod) {
-        // Construye la tabla de atributos
         let tabla = `<table class="tabla-atributos">`;
         for (const clave in prod.atributos) {
-            tabla += `<tr><td>${clave}</td><td>${prod.atributos[clave]}</td></tr>`;
+            let valor = prod.atributos[clave];
+            tabla += `<tr><td>${clave}</td><td>`;
+            if (Array.isArray(valor)) {
+                tabla += `<ul class="lista-impresoras">`;
+                valor.forEach(item => { tabla += `<li>${item}</li>`; });
+                tabla += `</ul>`;
+            } else {
+                tabla += valor;
+            }
+            tabla += `</td></tr>`;
         }
         tabla += `</table>`;
         
@@ -99,11 +107,13 @@ function mostrarDetalle(nombre) {
     }
 }
 
+
 function cerrarModal() {
     document.getElementById('modal-detalle').style.display = 'none';
 }
 
 // Para cerrar el modal al
+
 
 
 
