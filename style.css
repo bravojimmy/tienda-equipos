@@ -234,6 +234,17 @@ header h1 {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+.lista-impresoras {
+    columns: 2; /* Cambia 2 por 3 si tienes muchos modelos */
+    padding-left: 18px;
+    margin: 0;
+    font-size: 0.97em;
+}
+.lista-impresoras li {
+    break-inside: avoid;
+    margin-bottom: 2px;
+}
+
 
 
 
