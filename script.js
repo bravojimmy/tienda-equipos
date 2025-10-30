@@ -55,6 +55,20 @@ const detallesProductos = {
         'Estandar': 'PC3-12800',
         'Voltaje': '1.35V'
     }
+  },
+  'Tintaepson': {
+    imagen: 'epson664Negro.jpg',
+    nombre: 'Tinta Epson',
+    descripcion: 'Epson 664',
+    precio: 'S/40',
+    atributos: {
+        'Marca': 'EPSON',  
+        'Color': 'Negro, Cian, Magenta y Yellow',
+        'Original': 'SI',
+        'Cantidad(ml)': '70ml',
+        'Rendimiento': '4000 paginas',
+        'Impresoras Compatibles': 'L110/L120/L121/L200/L210/L220/L300/L310/L350/L355/L365/L375/L380/L395/L396/L455/L475/L495/L555/L565/L575/L1300'        
+    }
   }
   // Agrega más productos aquí...
 };
@@ -86,6 +100,7 @@ function cerrarModal() {
 }
 
 // Para cerrar el modal al
+
 
 
 
