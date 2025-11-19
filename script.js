@@ -75,12 +75,8 @@ function mostrarModal(categoria, idx) {
 function cerrarModal() {
   document.getElementById('modal-producto').style.display = 'none';
 }
-window.onclick = function(event) {
-  const modal = document.getElementById('modal-producto');
-  if (event.target == modal) {
-    cerrarModal();
-  }
-}
+
+
 
 
 
