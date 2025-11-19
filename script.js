@@ -6,13 +6,7 @@ const productosPorCategoria = {
     "Biwin 240GB",
     "MSI Spatium S270 1TB"
   ],
-  "Memoria RAM": [
-    {
-    imagen: 'RAMELITE8GB.jpg',
-    nombre: 'Memoria RAM',
-    descripcion: 'RAM Elite Group 8GB',
-    precio: 'S/100'   
-    },
+  "Memoria RAM": [    
     "Kingston Fury 8GB DDR4",
     "Corsair Vengeance 16GB DDR4",
     "Teamgroup Elite 4GB DDR3",
@@ -86,6 +80,7 @@ window.onclick = function(event) {
     cerrarModal();
   }
 }
+
 
 
 
