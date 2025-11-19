@@ -116,6 +116,9 @@ function cerrarModal() {
 
 const productosPorCategoria = {
   "SSD": [
+    {
+     "Kingston A400 240GB"
+    },
     "Kingston A400 240GB",
     "Kingston KC600 512GB",
     "Hiksemi 480GB",
@@ -123,6 +126,21 @@ const productosPorCategoria = {
     "MSI Spatium S270 1TB"
   ],
   "Memoria RAM": [
+    {
+    imagen: 'RAMELITE8GB.jpg',
+    nombre: 'Memoria RAM',
+    descripcion: 'RAM Elite Group 8GB',
+    precio: 'S/100',
+    atributos: {
+        'Marca': 'Elite Group',  
+        'Modelo': 'Elite',
+        'Capacidad': '8GB',
+        'Tipo': 'DDR3',
+        'Frecuencia': '1600Mhz',
+        'Estandar': 'PC3-12800',
+        'Voltaje': '1.35V'
+    }
+  },
     "Kingston Fury 8GB DDR4",
     "Corsair Vengeance 16GB DDR4",
     "Teamgroup Elite 4GB DDR3",
@@ -154,18 +172,28 @@ const productosPorCategoria = {
 
 function mostrarProductos(categoria) {
   const productos = productosPorCategoria[categoria];
-  let html = `<h3>${categoria}</h3>`;
+  let html = `<h3>${categoria}</h3><div class="productos-listado">`;
   if (productos && productos.length > 0) {
-    html += '<ul>';
-    productos.forEach(prod => {
-      html += `<li class="producto-listado"><h4>${prod}</h4></li>`;
+    productos.forEach((prod, idx) => {
+      html += `
+        <div class="card-producto" onclick="mostrarModal('${categoria}', ${idx})">
+          <img src="${prod.imagen}" alt="${prod.nombre}" class="prod-img">
+          <div>
+            <h4>${prod.nombre}</h4>
+            <p class="prod-precio">${prod.precio}</p>
+            <p class="prod-desc">${prod.descripcion}</p>
+          </div>
+        </div>
+      `;
     });
-    html += '</ul>';
+    html += '</div>';
   } else {
     html += '<p>No hay productos disponibles en esta categoría.</p>';
   }
   document.getElementById("listado-productos").innerHTML = html;
 }
+
+
 
 
 
