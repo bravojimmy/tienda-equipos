@@ -114,6 +114,59 @@ function cerrarModal() {
 
 // Para cerrar el modal al
 
+const productosPorCategoria = {
+  "SSD": [
+    "Kingston A400 240GB",
+    "Kingston KC600 512GB",
+    "Hiksemi 480GB",
+    "Biwin 240GB",
+    "MSI Spatium S270 1TB"
+  ],
+  "Memoria RAM": [
+    "Kingston Fury 8GB DDR4",
+    "Corsair Vengeance 16GB DDR4",
+    "Teamgroup Elite 4GB DDR3",
+    "XPG Gammix 8GB DDR4",
+    "Kingston Fury 16GB DDR5"
+  ],
+  "Mainboard": [
+    "Gigabyte B550M DS3H",
+    "MSI PRO B760M-A",
+    "Asrock H510M-HVS",
+    "Asus PRIME A320M-K",
+    "Gigabyte H410M S2"
+  ],
+  "Procesadores": [
+    "Intel Core i3 10100F",
+    "AMD Ryzen 5 5600G",
+    "Intel Core i5 12400",
+    "AMD Ryzen 3 3200G",
+    "Intel Core i7 12700"
+  ],
+  "Fuentes": [
+    "Antryx Reactor 650W",
+    "DeepCool DQ850-M-V2",
+    "Cooler Master MWE 500W",
+    "Gigabyte GP-P750GM",
+    "Thermaltake Smart 600W"
+  ]
+};
+
+function mostrarProductos(categoria) {
+  const productos = productosPorCategoria[categoria];
+  let html = `<h3>${categoria}</h3>`;
+  if (productos && productos.length > 0) {
+    html += '<ul>';
+    productos.forEach(prod => {
+      html += `<li class="producto-listado"><h4>${prod}</h4></li>`;
+    });
+    html += '</ul>';
+  } else {
+    html += '<p>No hay productos disponibles en esta categoría.</p>';
+  }
+  document.getElementById("listado-productos").innerHTML = html;
+}
+
 
 
 
