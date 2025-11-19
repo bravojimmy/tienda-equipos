@@ -1,4 +1,20 @@
 const productosPorCategoria = {
+  "SSD": [
+  {
+    nombre: "BIWIN M100 256GB",
+    imagen: "BWIN256GB473310.jpg",
+    precio: "$32.67",
+    descripcion: "SSD 256GB SATAIII 2.5 6.0GB/S"
+  },
+  {
+    nombre: "Kingston 500GB NVME",
+    imagen: "kingston500gbnvme452106.jpg",
+    precio: "$81.60",
+    descripcion: "SSD Kingston nvme nv3 Pcie4.0 m2."
+  },
+  // ... y así para todos
+]
+  
   "SSD": [   
     "Kingston A400 240GB",
     "Kingston KC600 512GB",
@@ -75,6 +91,7 @@ function mostrarModal(categoria, idx) {
 function cerrarModal() {
   document.getElementById('modal-producto').style.display = 'none';
 }
+
 
 
 
