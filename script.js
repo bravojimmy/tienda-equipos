@@ -193,6 +193,28 @@ function mostrarProductos(categoria) {
   document.getElementById("listado-productos").innerHTML = html;
 }
 
+function mostrarModal(categoria, idx) {
+  const prod = productosPorCategoria[categoria][idx];
+  document.getElementById('detalle-producto').innerHTML = `
+    <img src="${prod.imagen}" alt="${prod.nombre}" style="width:110px; margin:12px 0;">
+    <h3>${prod.nombre}</h3>
+    <p class="prod-precio">${prod.precio}</p>
+    <p>${prod.descripcion}</p>
+    <!-- Puedes agregar más detalles aquí si lo deseas -->
+  `;
+  document.getElementById('modal-producto').style.display = 'block';
+}
+
+function cerrarModal() {
+  document.getElementById('modal-producto').style.display = 'none';
+}
+window.onclick = function(event) {
+  const modal = document.getElementById('modal-producto');
+  if (event.target == modal) {
+    cerrarModal();
+  }
+}
+
 
 
 
