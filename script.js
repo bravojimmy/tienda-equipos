@@ -1,8 +1,5 @@
 const productosPorCategoria = {
-  "SSD": [
-    {
-     "Kingston A400 240GB"
-    },
+  "SSD": [   
     "Kingston A400 240GB",
     "Kingston KC600 512GB",
     "Hiksemi 480GB",
@@ -89,6 +86,7 @@ window.onclick = function(event) {
     cerrarModal();
   }
 }
+
 
 
 
