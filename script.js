@@ -57,6 +57,7 @@ function mostrarProductos(categoria) {
     html += '<p>No hay productos disponibles en esta categoría.</p>';
   }
   document.getElementById("listado-productos").innerHTML = html;
+  alert('Seleccionaste la categoría: ' + categoria);
 }
 
 function mostrarModal(categoria, idx) {
@@ -80,6 +81,7 @@ window.onclick = function(event) {
     cerrarModal();
   }
 }
+
 
 
 
