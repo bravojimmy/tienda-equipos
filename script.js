@@ -13,15 +13,7 @@ const productosPorCategoria = {
     descripcion: "SSD Kingston nvme nv3 Pcie4.0 m2."
   },
   // ... y así para todos
-]
-  
-  "SSD": [   
-    "Kingston A400 240GB",
-    "Kingston KC600 512GB",
-    "Hiksemi 480GB",
-    "Biwin 240GB",
-    "MSI Spatium S270 1TB"
-  ],
+],
   "Memoria RAM": [    
     "Kingston Fury 8GB DDR4",
     "Corsair Vengeance 16GB DDR4",
@@ -91,6 +83,7 @@ function mostrarModal(categoria, idx) {
 function cerrarModal() {
   document.getElementById('modal-producto').style.display = 'none';
 }
+
 
 
 
