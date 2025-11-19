@@ -14,17 +14,8 @@ const productosPorCategoria = {
     imagen: 'RAMELITE8GB.jpg',
     nombre: 'Memoria RAM',
     descripcion: 'RAM Elite Group 8GB',
-    precio: 'S/100',
-    atributos: {
-        'Marca': 'Elite Group',  
-        'Modelo': 'Elite',
-        'Capacidad': '8GB',
-        'Tipo': 'DDR3',
-        'Frecuencia': '1600Mhz',
-        'Estandar': 'PC3-12800',
-        'Voltaje': '1.35V'
-    }
-  },
+    precio: 'S/100'   
+    },
     "Kingston Fury 8GB DDR4",
     "Corsair Vengeance 16GB DDR4",
     "Teamgroup Elite 4GB DDR3",
@@ -98,6 +89,7 @@ window.onclick = function(event) {
     cerrarModal();
   }
 }
+
 
 
 
