@@ -136,19 +136,7 @@ const productosPorCategoria = {
     "Asus PRIME A320M-K",
     "Gigabyte H410M S2"
   ],
-  "Procesadores": [
-    <div class="productos">
-    <!--PRODUCTO PROCESADOR -->
-      <div class="producto" onclick="mostrarDetalle('AMDAthlon')">
-        <img src="AMDAthlon_3000G.jpg" alt="Procesador Athlon">
-        <h3>Procesador AMD</h3>
-        <p>Procesador AMD Athlon 3000G</p>
-        <span>S/220</span><br>
-        <span class="ver-mas">
-        🡺 Ver más
-        </span>
-      </div>
-    </div>,
+  "Procesadores": [    
     "Intel Core i3 10100F",
     "AMD Ryzen 5 5600G",
     "Intel Core i5 12400",
@@ -178,6 +166,7 @@ function mostrarProductos(categoria) {
   }
   document.getElementById("listado-productos").innerHTML = html;
 }
+
 
 
 
