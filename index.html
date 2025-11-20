@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Equipos de Cómputo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo.jpg" alt="Logo empresa" class="logo">
+    <h1>Tienda de Equipos de Cómputo</h1>
+    <nav>
+      <a href="#">Catálogo</a>
+      <a href="#">Servicios</a>
+      <a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a>
+    </nav>
+  </header>
+  <section class="categorias">
+    <button onclick="mostrarProductos('SSD')">SSD</button>
+    <button onclick="mostrarProductos('Memoria RAM')">Memoria RAM</button>
+    <button onclick="mostrarProductos('Mainboard')">Mainboard</button>
+    <button onclick="mostrarProductos('Procesadores')">Procesadores</button>
+    <button onclick="mostrarProductos('Fuentes')">Fuentes</button>
+  </section>
+  <main>
+    <section id="listado-productos"></section>
+    <section class="servicios">
+      <h2>Principales Servicios</h2>
+      <div class="cards-servicios">
+        <div class="card-servicio">
+          <img src="img/formateo.jpg" alt="Formateo">
+          <p>Formateo</p>
+        </div>
+        <div class="card-servicio">
+          <img src="img/programas.jpg" alt="Instalación de programas">
+          <p>Instalación de programas</p>
+        </div>
+        <div class="card-servicio">
+          <img src="img/remoto.jpg" alt="Asistencia remota">
+          <p>Asistencia remota</p>
+        </div>
+        <div class="card-servicio">
+          <img src="img/hardware.jpg" alt="Optimización de hardware">
+          <p>Optimización de hardware</p>
+        </div>
+        <div class="card-servicio">
+          <img src="img/impresoras.jpg" alt="Reparación de impresoras">
+          <p>Reparación de impresoras</p>
+        </div>
+      </div>
+    </section>
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes preguntas o necesitas asesoría? ¡Habla con nosotros por WhatsApp!</p>
+      <a class="whatsapp" href="https://wa.me/tu-numero">Chatear por WhatsApp</a>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 PC'SALEXANDRA - Tienda de Equipos de Cómputo
+  </footer>
+  <!-- Modal productos -->
+  <div id="modal-producto" class="modal">
+    <div class="modal-contenido">
+      <span class="modal-cerrar" onclick="cerrarModal()">&times;</span>
+      <div id="detalle-producto"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
