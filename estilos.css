@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #172c78;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+header h1 {
+  font-size: 24px;
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FFA500;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+}
+
+/* CATEGORIAS */
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 25px 15px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.categorias button {
+  background: #FFA500;
+  border: none;
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.categorias button:hover {
+  background: #cc8500;
+}
+
+.categorias button:active {
+  transform: scale(0.98);
+}
+
+/* MAIN - LISTADO PRODUCTOS */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#listado-productos h3 {
+  color: #172c78;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.productos-listado {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.card-producto {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card-producto:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+.card-producto img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.card-producto h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.card-producto .prod-precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #172c78;
+  margin: 10px 0;
+}
+
+.card-producto .prod-desc {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* SERVICIOS */
+.servicios {
+  margin: 50px 0 40px 0;
+}
+
+.servicios h2 {
+  text-align: center;
+  color: #172c78;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cards-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.card-servicio {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card-servicio:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.card-servicio img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.card-servicio p {
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* CONTACTO */
+.contacto {
+  text-align: center;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.contacto h2 {
+  color: #172c78;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.contacto p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.whatsapp:hover {
+  background: #1ba85c;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background: #172c78;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-contenido {
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 14px;
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-cerrar:hover {
+  color: #FFA500;
+}
+
+#detalle-producto img {
+  max-width: 130px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+#detalle-producto h3 {
+  font-size: 22px;
+  color: #172c78;
+  margin-bottom: 12px;
+}
+
+#detalle-producto .prod-precio {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFA500;
+  margin-bottom: 16px;
+}
+
+#detalle-producto p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* RESPONSIVE - TABLETS */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 12px 15px;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  nav {
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .categorias {
+    gap: 10px;
+    padding: 18px 10px;
+  }
+
+  .categorias button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  #listado-productos h3 {
+    font-size: 24px;
+  }
+
+  .productos-listado {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+  }
+
+  .card-producto {
+    padding: 12px;
+  }
+
+  .card-producto img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .servicios h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cards-servicios {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .card-servicio {
+    padding: 14px;
+  }
+
+  .card-servicio img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contacto {
+    padding: 22px 16px;
+  }
+
+  .contacto h2 {
+    font-size: 22px;
+  }
+
+  .contacto p {
+    font-size: 15px;
+  }
+
+  .modal-contenido {
+    max-width: 380px;
+    padding: 20px;
+  }
+}
+
+/* RESPONSIVE - CELULARES */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .categorias {
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+  }
+
+  .categorias button {
+    width: 100%;
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  #listado-productos h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .productos-listado {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .card-producto {
+    padding: 10px;
+  }
+
+  .card-producto img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card-producto h4 {
+    font-size: 14px;
+  }
+
+  .card-producto .prod-precio {
+    font-size: 16px;
+  }
+
+  .card-producto .prod-desc {
+    font-size: 12px;
+  }
+
+  .servicios {
+    margin: 30px 0;
+  }
+
+  .servicios h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .cards-servicios {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .card-servicio {
+    padding: 12px;
+  }
+
+  .card-servicio img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-servicio p {
+    font-size: 13px;
+  }
+
+  .contacto {
+    padding: 18px 12px;
+    margin-bottom: 20px;
+  }
+
+  .contacto h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+
+  .contacto p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .whatsapp {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 14px;
+    font-size: 12px;
+  }
+
+  .modal {
+    padding: 10px;
+  }
+
+  .modal-contenido {
+    max-width: 95%;
+    padding: 16px;
+  }
+
+  .modal-cerrar {
+    font-size: 24px;
+  }
+
+  #detalle-producto img {
+    max-width: 110px;
+  }
+
+  #detalle-producto h3 {
+    font-size: 18px;
+  }
+
+  #detalle-producto .prod-precio {
+    font-size: 20px;
+  }
+
+  #detalle-producto p {
+    font-size: 13px;
+  }
+}
